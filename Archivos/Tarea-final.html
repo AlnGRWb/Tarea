@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Gapi App</title>
+		<script	  src="https://code.jquery.com/jquery-3.1.1.min.js"
+			  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+			  crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<style>
+		body { background-image: url("pattern.jpg"); }   
+		#este { margin: 0; } 
+
+		.jumbotron { margin: -3px 0 0 0;
+					 background-image: url("fondo.jpg");
+					/* background-attachment: cover; */
+					 background-repeat: no-repeat;
+					 color: white;
+					 background-position: 0px -80px;
+					 background-size: 100% 145%;
+					 min-height: 400px; 
+					 text-align: center; }
+		#txtjumbo { padding: 100px; }
+
+		.row { margin: 1em;
+				background-color: #eee; 
+				border-radius: 5px;
+				padding-left: 6px; 
+				 }		
+		 
+		#Sidebar 	{ background-color: #eee;
+		 		min-height: 350px;
+		 		border-radius: 5px;
+		 		margin-top: 1em;}
+	</style>
+</head>
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top" id="este" >
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" >
+					<span class="sr-only">Toggle navigation</span>
+		        	<span class="icon-bar"></span>
+		        	<span class="icon-bar"></span>
+		        	<span class="icon-bar"></span>
+		        	<a class="navbar-brand" href="#"> <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> G(App)i <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span></a>
+				</button>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav">
+		        <li ><a href="#">Nvl Principiante <span class="sr-only">(current)</span></a></li>
+		        <li ><a href="#">Nvl Inermedio  </a> </li>
+		        <li ><a href="#">Nvl Avanzado  </a> </li>
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+
+			</div><!--.nav-header -->
+		</div><!--.cont-fluid-->
+	</nav>
+	<div class="jumbotron ">
+	 <div class="container" id="txtjumbo">
+	 	
+	 	<h1> Make... Anything </h1>
+	 	<h3> Sky is the Limit!!.. </h3>
+	 </div>
+	</div>
+	
+	<div class="container">
+ <h2> <span class="label label-info">Descripción de Conocimientos Adquiridos </span> </h2>
+	  <div class="col-xs-12 col-md-9" id="Info" ><!--Divide los "Topics" & "Side bar"-->
+	  	<div class="row">
+		<h2>Html 5</h2>
+		<img class="imag">
+		<p> </p>
+			
+		</div> <!--html-->
+
+		<div class="row">
+		<h2>Css 3</h2>
+		<img class="imag">
+		<p> </p>
+		</div><!--css-->
+
+		<div class="row">
+		<h2>Javascript</h2>
+		<img class="imag">
+		<p> </p>
+		</div><!--jvascript-->
+
+	  </div><!--.col-->
+	  <div class="col-xs-12 col-md-3" id="Sidebar" >
+	  	<!--Aqui todavia no se que poner... ¿-_-?-->
+	  </div> 
+	</div><!--.container-->
+
+	<script>
+	$(document).ready(function(){
+		var $img = $('.imag');
+
+			 $img.each(function(i){
+			 var image = $(this).attr({"src" : i+".png", "height" : "120px"});
+		   	});
+	
+	})//document
+	
+	</script>
+</body>
+</html>
