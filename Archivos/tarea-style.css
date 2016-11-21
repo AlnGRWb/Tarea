@@ -1,0 +1,37 @@
+
+* { font-family: 'Roboto'; }
+		body { background-image: url("pattern.jpg"); }   
+		#este { margin: 0;}
+
+		#nav-respon{ display: inline-table; } 
+
+		.jumbotron { margin: 0;
+					 background-image: url("fondo.jpg");
+					 background-attachment: fixed;  
+					 background-repeat: no-repeat;
+					 color: white;
+					 background-position: 0px -75px;
+					 background-size: 100% 100%;
+					 min-height: 100px; 
+					 text-align: center; }
+
+		#txtjumbo { padding: 70px; }
+
+		#learned { background-color: #efefef;
+					margin: 1em 0;
+					border-radius: 5px; }
+
+		.row { margin: 1em;
+			   padding-left: 6px; }		
+		 
+		#Sidebar 	{ margin-left: 1em; 
+				background-color: #eee;
+		 		min-height: 350px;
+		 		border-radius: 5px;
+		 		margin-top: 1em;}
+
+		footer { margin-top: 1em; 
+				padding: 2em;
+				background-color: #efefef;
+				text-align: center; }
+	 	footer a { padding: 0 5px; }
